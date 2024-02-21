@@ -1,23 +1,21 @@
 #include <stdio.h>
 
-/*
-** The main function of the program.
-** Returns 0 at the end of the program.
-*/
+/**
+ * main - Entry point
+ * Description: 'Alphabet reversed'
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-        char letter = 'z';
+	char letter = 'z';
 
-        while (letter >= 'a')
-        {
-                {
-                        putchar(letter);
-                };
+	while (letter >= 'a')
+	{
+		putchar(letter);
+		letter--;
+	};
 
-                letter--;
-        };
+	putchar('\n');
 
-        putchar('\n');
-
-        return (0);
+	return (0);
 }
