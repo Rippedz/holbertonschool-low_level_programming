@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	char x = '0';
+	char hexDigit = '0';
 
-	while ( x <= '9')
+	while (hexDigit <= '9')
 	{
-		putchar(x);
-		x++;
+		putchar(hexDigit);
+		hexDigit++;
 	};
 
-		x = 'a';
+	hexDigit = 'a';
 
-	while ( x <= 'f')
+	while (hexDigit <= 'f')
 	{
-		putchar(x);
-		x++;
+		putchar(hexDigit);
+		hexDigit++;
 	};
 
 	putchar('\n');
