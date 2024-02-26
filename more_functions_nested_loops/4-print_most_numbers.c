@@ -1,15 +1,20 @@
 #include "main.h"
 
 /**
- * _isalpha - checks for alphabetic character
- * @c: character to be checked
+ * print_most_numbers - prints numbers from 0 to 9 except 2 and 4
  *
- * Return: 1 if c is a letter, lowercase or uppercase, 0 otherwise
+ * Return: void
  */
-int _isalpha(int c)
+void print_most_numbers(void)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	else
-		return (0);
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		if (i != 2 && i != 4)
+		{
+			_putchar(i + '0');
+		}
+	}
+	_putchar('\n');
 }
