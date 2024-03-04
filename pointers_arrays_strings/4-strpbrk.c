@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strpbrk - gets the length of a prefix substring                     * @s: character to be print                                            * @accept: string containing the characters to match                  *                                                                     * Return: return always 0
+ * ibytes from accept
  */
 char *_strpbrk(char *s, char *accept)
 {
