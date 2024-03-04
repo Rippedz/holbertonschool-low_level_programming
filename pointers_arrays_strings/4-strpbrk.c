@@ -2,27 +2,26 @@
 #include <stdio.h>
 
 /**
- 
-_strpbrk - Entry point
-@accept: character to print
-@s: character to print
-*
-Return: Nothing.
-*/
+ * _strpbrk - Entry point
+ * @accept: character to print
+ * @s: character to print
+ *
+ * Return: Nothing.
+ */
 
-char _strpbrk(chars, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-        int i, j;
+	int i, j;
 
-        for (i = 0 ; s[i] != '\0' ; i++)
-        {
-                for (j = 0 ; accept[j] != '\0' ; j++)
-                {
-                        if (s[i] == accept[j])
-                        {
-                                return (&s[i]);
-                        }
-                }
-        }
-        return ('\0');
+	for (i = 0 ; s[i] != '\0' ; i++)
+	{
+		for (j = 0 ; accept[j] != '\0' ; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				return (&s[i]);
+			}
+		}
+	}
+	return ('\0');
 }
