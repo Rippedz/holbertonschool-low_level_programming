@@ -9,13 +9,14 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i = 0;
+	unsigned int i = 0,x;
 	char *str;
 
 	va_start(args, format);
 
 	while (format && format[i])
 	{
+		x = 1;
 		switch (format[i])
 		{
 			case 'c':
@@ -37,9 +38,11 @@ void print_all(const char * const format, ...)
 				printf("%s", str);
 				break;
 			default:
+				x = 0;
 				break;
 		}
-		if (format[i + 1])
+		
+		if (format[i + 1] && x)
 			printf(", ");
 		i++;
 	}
