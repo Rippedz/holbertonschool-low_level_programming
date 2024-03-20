@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i = 0,x;
+	unsigned int i = 0, x;
 	char *str;
 
 	va_start(args, format);
@@ -41,7 +41,6 @@ void print_all(const char * const format, ...)
 				x = 0;
 				break;
 		}
-		
 		if (format[i + 1] && x)
 			printf(", ");
 		i++;
