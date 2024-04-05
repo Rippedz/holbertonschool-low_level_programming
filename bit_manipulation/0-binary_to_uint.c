@@ -6,6 +6,8 @@
  *
  * Return: unsigned int
  */
+
+/*start*/
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
